@@ -1,0 +1,166 @@
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card:hsl(216, 50%, 16%);
+    --very-dark-blue-line:hsl(215, 32%, 25%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--very-dark-blue-main);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box ;
+    font-family: 'Outfit', sans-serif;
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-blue-card);
+    margin: 50px auto;
+    text-align: left;
+    width: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px 20px;
+    outline: 8px solid var(--very-dark-blue-card);
+    box-shadow: 0 20px 0px 15px hsl(214, 54%, 10%);
+    position: relative;
+}
+@media (max-width: 376px){
+    .main-div{
+        margin: 10px auto;
+    }
+}
+.main-div .first{
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+.main-div .first .equi{
+    max-width: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: inline;
+}
+.main-div .second{
+    display: none;
+    position: absolute;
+    text-align: center;
+}
+.main-div .second img{
+    position: absolute;
+    top: 135px;
+    left: 130px;
+}
+.main-div .first:hover + .second{
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.537);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.main-div h3{
+    color: var(--white);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.main-div h3:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+.main-div p{
+    color: var(--soft-blue);
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.main-div .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.main-div .ether{
+    display: flex;
+    width: fit-content;
+}
+.main-div .ether img{
+    width: 10px;
+    margin-right: 8px;
+}
+.main-div .ether span{
+    color: var(--cyan);
+}
+.main-div .clock{
+    display: flex;
+    width: fit-content;
+}
+.main-div .clock img{
+    width: 17px;
+    margin-right: 8px;
+}
+.main-div .clock span{
+    color: var(--soft-blue);
+}
+.main-div hr{
+    border: 1px solid var(--soft-blue);
+}
+.main-div .creator{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.main-div .creator img{
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.main-div .creator .address{
+    color:var(--soft-blue);
+    margin-right: 5px;
+}
+.main-div .creator .name{
+    color:var(--white) ;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.main-div .creator .name:hover{
+    color:var(--cyan) ;
+    cursor: pointer;
+}
